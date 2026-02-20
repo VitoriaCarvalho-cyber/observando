@@ -1,22 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Observando</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #f5fff8;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      color: #2e7d32;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Observando - Blog da Vitória</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5fff6;
+  color: #333;
+}
+
+/* CAPA */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #2e7d32;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* BLOG */
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+</style>
 </head>
+
 <body>
+
+<!-- CAPA INICIAL -->
+<div class="hero">
   <h1>🌿 Observando</h1>
-  <p>Meu blog para observar os animais do meu quintal.</p>
-  <p>Em breve vou postar fotos e histórias dos bichinhos 🐦🐶🐱</p>
+  <p>Meu nome é Vitória, sou estudante de Biologia e criei este blog para registrar e compartilhar as experiências do meu dia a dia observando os animais que aparecem no meu quintal. Aqui eu reúno fotos, comportamentos, curiosidades e pequenas descobertas sobre a fauna que vive ao meu redor.</p>
+  <button onclick="document.getElementById('blog').scrollIntoView();">Entrar no Blog</button>
+</div>
+
+<!-- BLOG -->
+<header id="blog">
+<h2>Blog Observando</h2>
+<p>Diário de campo pessoal da Vitória 🐾</p>
+</header>
+
+<section>
+<h2>📖 Sobre o projeto</h2>
+<p>Este blog é um diário de observação informal, onde registro espécies, comportamentos e curiosidades sobre os animais que visitam meu quintal. Meu objetivo é aprender, documentar e compartilhar conhecimento de forma simples e acessível.</p>
+</section>
+
+<section>
+<h2>🐦 Últimas Observações</h2>
+
+<div class="post">
+<h3>Passarinho azul no pé de manga</h3>
+<p>Hoje observei um pequeno pássaro azul cantando no pé de manga. Ele parecia estar procurando alimento e cantava em intervalos regulares.</p>
+</div>
+
+<div class="post">
+<h3>Gato visitante noturno</h3>
+<p>Um gato desconhecido apareceu no quintal durante a noite. Demonstrou comportamento exploratório e não apresentou agressividade.</p>
+</div>
+
+</section>
+
+<footer>
+<p>🌎 Observando — Blog de campo da Vitória | Estudante de Biologia</p>
+</footer>
+
 </body>
 </html>
